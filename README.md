@@ -24,3 +24,5 @@ Remove terrobyte mission cooldowns
 
 ### Single MC Vehicle Sell (toggle)
 Makes every sell mission for the MC businesses use the single vehicle mission (rng is ass)
+
+Also it should be noted that this is still in development so some stuff may not work perfectly but should for the most part
