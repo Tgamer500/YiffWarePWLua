@@ -21,7 +21,6 @@ end
 
 local parentId = menu.add_feature("YiffWarePW", "parent", 0).id
 menu.add_feature("Fill Snacks", "toggle", parentId, function(e)
-    menu.notify("Snacks are being filled", "YiffWare.PW", nil, 0xff00ff)
     local items = {
         {'NO_BOUGHT_YUM_SNACKS', 30},
         {'NO_BOUGHT_HEALTH_SNACKS', 15},
@@ -41,7 +40,6 @@ menu.add_feature("Fill Snacks", "toggle", parentId, function(e)
 end)
 
 menu.add_feature("Fill Armor", "toggle", parentId, function(e)
-    menu.notify("Armor is being filled", "YiffWare.PW", nil, 0xff00ff)
     local items = {
         {'MP_CHAR_ARMOUR_1_COUNT', 10},
         {'MP_CHAR_ARMOUR_2_COUNT', 10},
@@ -59,7 +57,6 @@ menu.add_feature("Fill Armor", "toggle", parentId, function(e)
 end)
 
 menu.add_feature("Remove CEO Crate Cooldown", "toggle", parentId, function(e)
-    menu.notify("CEO crate cooldown removed", "YiffWare.PW", nil, 0xff00ff)
     if e.on then
         script.set_global_i(262145+15361, 0)
         script.set_global_i(262145+15362, 0)
@@ -71,7 +68,6 @@ menu.add_feature("Remove CEO Crate Cooldown", "toggle", parentId, function(e)
 end)
 
 menu.add_feature("Remove CEO Vehicle Cargo Cooldown", "toggle", parentId, function(e)
-    menu.notify("CEO vehicle sell cooldown removed", "YiffWare.PW", nil, 0xff00ff)
     if e.on then
         script.set_global_i(262145+19477, 0)
         script.set_global_i(262145+19478, 0)
@@ -87,7 +83,6 @@ menu.add_feature("Remove CEO Vehicle Cargo Cooldown", "toggle", parentId, functi
 end)
 
 menu.add_feature("Remove Air Freight Cargo Cooldown", "toggle", parentId, function(e)
-    menu.notify("Air freight cargo cooldown removed", "YiffWare.PW", nil, 0xff00ff)
     if e.on then
         script.set_global_i(262145+22522, 0)
         script.set_global_i(262145+22523, 0)
@@ -105,7 +100,6 @@ menu.add_feature("Remove Air Freight Cargo Cooldown", "toggle", parentId, functi
 end)
 
 menu.add_feature("Remove Terrobyte Mission Cooldown", "toggle", parentId, function(e)
-    menu.notify("Terrobyte mission cooldown removed", "YiffWare.PW", nil, 0xff00ff)
     if e.on then
         script.set_global_i(262145+24304, 0)
         script.set_global_i(262145+24305, 0)
@@ -123,7 +117,7 @@ menu.add_feature("Remove Terrobyte Mission Cooldown", "toggle", parentId, functi
 end)
 
 menu.add_feature("Single MC Vehicle Sell", "toggle", parentId, function(e)
-    menu.notify("MC Sell Vehicle Set", "YiffWare.PW", nil, 0xff00ff)
+    menu.notify("MC Sell Vehicle Locked", "YiffWare.PW", nil, 0xff00ff)
     while e.on do
         system.wait(0)
         local scriptHash = gameplay.get_hash_key('gb_biker_contraband_sell')
