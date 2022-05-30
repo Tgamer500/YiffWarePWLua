@@ -13,13 +13,13 @@ Refills your armor every 30 seconds
 ### Remove CEO Crate Cooldown (toggle)
 Removes CEO special cargo source and sell cooldowns
 
-### Remove CEO Vehicle Cargo Cooldown (toggle)
+### Remove CEO Vehicle Cargo Cooldown (toggle) //untested
 Removes CEO vehicle sell cooldowns
 
-### Remove Air Freight Cargo Cooldown (toggle)
+### Remove Air Freight Cargo Cooldown (toggle) //untested
 Removes air freight source and sell cooldowns
 
-### Remove Terrobyte Mission Cooldown (toggle)
+### Remove Terrobyte Mission Cooldown (toggle) //untested
 Remove terrobyte mission cooldowns
 
 ### Single MC Vehicle Sell (toggle)
